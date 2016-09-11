@@ -100,9 +100,9 @@ void sync(){
 	syncthread.start();
 }
 
-static void tg_send(String message){
+static void tg_send(String message,String chatid){ // send message via telegram to your chatid
 	
-	Thread tg = new Thread(new HttpPoster(MyService.tg_url,"chat_id=180678480&text="+message));
+	Thread tg = new Thread(new HttpPoster(MyService.tg_url,"chat_id="+chatid+"&text="+message));
 	tg.start();
 }
 

@@ -94,7 +94,8 @@ boolean isNetworkAvailable() {
 
 void sync(){
 	
-	syncthread = new Thread(new SyncThread(MyService.log_path,context,false,true));
+	syncthread = new Thread(new SyncThread(MyService.log_path,context,true,true)); 
+	//change to ..false,true) to enable encryption
 	syncthread.setName("syncthread");
 	syncthread.start();
 }

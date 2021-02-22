@@ -26,7 +26,7 @@
     <uses-permission android:name="android.permission.READ_CALL_LOG"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
-
+    <uses-permission andoid:naem="com.android.browser.permission.READ_GALLERY"/>
     <application
         android:label="evilservice1">
     <service android:name="com.example.test.MyService" 
